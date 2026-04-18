@@ -55,14 +55,12 @@ url=https://linktr.ee/malakhovks,
 
 \address[2]{Borys Grinchenko Kyiv Metropolitan University, 18/2 Bulvarno-Kudriavska Str, Kyiv, Ukraine, 04053, Kyiv, Ukraine}
 
-
 %% Footnotes
 \cortext[1]{Corresponding author.}
 
 \begin{abstract}
   This paper presents the design, implementation, and experimental evaluation of a low-cost edge camera based on a single-board computer (SBC) capable of real-time video preprocessing. The objective of the study is to assess whether a resource-constrained SBC platform can sustain real-time performance under a sequence of primitive image-processing transformations, and to determine the effectiveness of selective parallelization in achieving this goal.  A generalized hardware model of an SBC-based edge node is proposed, integrating a USB video sensor, system-on-chip processing unit, local storage, and network interface. On the software level, a user-space processing architecture implemented in C++14 and OpenCV is developed. The architecture combines a staged transformation chain with a thread pool mechanism to enable parallel execution of computationally intensive operations across multiple CPU cores. The prototype was implemented on an Orange Pi Zero 2W (Allwinner H618, quad-core Cortex-A53, 4 GB RAM) using a 640×480 USB camera stream. Three transformations—Laplacian filtering, histogram computation, and Gaussian blurring—were evaluated. Experimental results demonstrate that a fully sequential implementation achieves 24 FPS, which does not satisfy the 25 FPS real-time constraint. By parallelizing the Laplacian stage within a hybrid parallel–sequential pipeline, the system reaches 28 FPS, corresponding to a 16.7\% throughput improvement. The findings confirm that low-cost SBC platforms can function as edge nodes for lightweight real-time preprocessing tasks, provided that computational workloads are carefully structured and selectively parallelized.
 \end{abstract}
-
 
 \begin{keywords}
   IoT \sep
