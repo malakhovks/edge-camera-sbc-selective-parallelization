@@ -180,7 +180,7 @@ Since the target hardware is a low-cost SBC, the methodological focus of this st
 
 The first transformation is \textit{Gaussian blurring}, which performs local smoothing by convolving the image with a Gaussian kernel. This operation reduces high-frequency noise and is frequently used as a preprocessing step in vision pipelines \cite{reinhard2006hdr}.
 
-The second transformation is \textit{Laplacian-based contour extraction} \cite{Viola_Jones_2001}. The Laplacian operator is a second-order differential operator that emphasizes regions of rapid intensity variation and is therefore suitable for highlighting edges and structural transitions in the image. In the present study, a discrete $3 \\times 3$ approximation of the Laplacian operator is used. The result is stored as a grayscale frame for subsequent analysis.
+The second transformation is \textit{Laplacian-based contour extraction} \cite{Viola_Jones_2001}. The Laplacian operator is a second-order differential operator that emphasizes regions of rapid intensity variation and is therefore suitable for highlighting edges and structural transitions in the image. In the present study, a discrete $3 \times 3$ approximation of the Laplacian operator is used. The result is stored as a grayscale frame for subsequent analysis.
 
 The third transformation is \textit{histogram computation}, which determines the distribution of pixel intensities in the frame. Histograms are widely used as compact descriptors of image structure and may support subsequent tasks such as object localization, motion characterization, or scene-change analysis \cite{Lowe_2004}.
 
