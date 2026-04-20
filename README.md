@@ -2,6 +2,8 @@
 
 TeX source, figures, and bibliography for the paper **“Edge Camera Based on a Single-Board Computer: Hybrid Selective Parallelization in Real-Time Video Processing.”**
 
+For the International Scientific and Practical Programming Conference (UkrPROG 2026), Kyiv, Ukraine
+
 ## Authors
 
 ### Oleksii V. Bahatskyi
